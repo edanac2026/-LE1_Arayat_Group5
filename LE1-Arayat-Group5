@@ -14,7 +14,7 @@
                 document.getElementById("heading").innerHTML = "Arayat Trivia | Score: " + score;
             }
             function minusScore(){
-                score + 0;
+                score -= 1;
                 document.getElementById("heading").innerHTML = "Arayat Trivia | Score: " + score;
             }
         </script>      

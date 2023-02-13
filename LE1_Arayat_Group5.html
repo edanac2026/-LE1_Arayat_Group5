@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <title>Arayat Trivia</title>
+        <script>
+            var score = 0;
+            function addScore(){
+                score += 1;
+                document.getElementById("heading").innerHTML = "Arayat Trivia | Score: " + score;
+            }
+            function minusScore(){
+                score -= 1;
+                document.getElementById("heading").innerHTML = "Arayat Trivia | Score: " + score;
+            }
+        </script>      
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="background">
+        <div class="background-overlay">
+            <h1 id="heading">Arayat Trivia | Score: </h1>
+            <div class="row">
+                <div class="column">
+                    <h3>Question 1 of 4</h3>
+                    <h6>Who among the following gave everyone gifts at the Christmas party?</h6>
+                    <ul>
+                        <li>A. Dane</li>
+                        <li>B. Faith</li>
+                        <li>C. Martina</li>
+                        <li>D. All of the above</li>
+                    </ul>
+                    <button class="btn btn primary" onclick="minusScore(); this.disabled = true; ">A</button>
+                    <button class="btn btn primary" onclick="minusScore(); this.disabled = true;">B</button>
+                    <button class="btn btn primary" onclick="minusScore(); this.disabled = true;">C</button>
+                    <button class="btn btn primary" onclick="addScore(); this.disabled = true;">D</button>
+                </div>
+                <div class="column">
+                    <h3>Question 2 of 4</h3>
+                    <h6>Who among the following does not have or has not had an older sibling go to Pisay?</h6>
+                    <ul>
+                        <li>A. Denzel</li>
+                        <li>B. Fiel</li>
+                        <li>C. Noah</li>
+                        <li>D. Sheldon</li>
+                    </ul>
+                    <button class="btn btn primary" onclick="addScore(); this.disabled = true;">A</button>
+                    <button class="btn btn primary" onclick="minusScore(); this.disabled = true;">B</button>
+                    <button class="btn btn primary" onclick="minusScore(); this.disabled = true;">C</button>
+                    <button class="btn btn primary" onclick="minusScore(); this.disabled = true;">D</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h3>Question 3 of 4</h3>
+                    <h6>Who among the following is not an official member of the Valorant team Beta Division?</h6>
+                    <ul>
+                        <li>A. Bryll</li>
+                        <li>B. Carlos</li>
+                        <li>C. Lucas</li>
+                        <li>D. Tristan</li>
+                    </ul>
+                    <button class="btn btn primary" onclick="addScore(); this.disabled = true;">A</button>
+                    <button class="btn btn primary" onclick="minusScore(); this.disabled = true;">B</button>
+                    <button class="btn btn primary" onclick="minusScore(); this.disabled = true;">C</button>
+                    <button class="btn btn primary" onclick="minusScore(); this.disabled = true;">D</button>
+                </div>
+                <div class="column">
+                    <h3>Question 4 of 4</h3>
+                    <h6>Who opened an umbrella while strutting during a ValEd presentation activity?</h6>
+                    <ul>
+                        <li>A. Althea</li>
+                        <li>B. Aya</li>
+                        <li>C. Carl</li>
+                        <li>D. Sean</li>
+                    </ul>
+                    <button class="btn btn primary" onclick="minusScore(); this.disabled = true;">A</button>
+                    <button class="btn btn primary" onclick="addScore(); this.disabled = true;">B</button>
+                    <button class="btn btn primary" onclick="minusScore(); this.disabled = true;">C</button>
+                    <button class="btn btn primary" onclick="minusScore(); this.disabled = true;">D</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
